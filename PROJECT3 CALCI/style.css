@@ -1,0 +1,71 @@
+body{
+    background-image: url("calci.png");
+    background-position: center;
+    background-size: cover;
+    background-position:20px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    height:100vh;
+    margin: 0;
+   font-family:"Nunito", sans-serif;
+}
+
+#grid{
+    background-color:rgba(112, 112, 112, 0.881);
+     height: 27rem;
+    width: auto;
+    max-width:27rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    border-radius: 0.8rem;
+    margin-top: 8rem;
+    
+}
+
+#display{
+    background-color:rgb(15, 27, 65);
+    box-sizing: border-box; /*element will shrink to absorb extra width if padding is added*/ 
+    width: calc(100% - 35px);/*width will depend on box size and will be constant wrt calculator*/
+    margin:0 0 1.2rem 0.9rem;
+    padding:0.5rem;
+    border-radius: 0.3rem;
+    color: white;
+    font-size: 20px;
+    text-align: right;
+    opacity: 1;
+}/*calc() it calculates the mathematical expression between the paranthesis*/
+
+button{
+    width:20%;
+    padding: 0.9rem 0;
+    margin:0.4rem;
+    margin-left:0.6rem;
+    border:none;
+    border-radius: 0.2rem;
+    font-weight: 400;
+    font-size:24px;
+
+    cursor: pointer;/*cursor appearance on button will be a pointer*/
+    opacity: 0.7;
+}
+
+button:hover{
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+button.operation{
+    background-color: rgb(22, 185, 226);
+}
+
+button.operation:hover{
+    background-color:rgb(144, 54, 9);
+}
+
+button.span{
+    width:calc(40% + 15px);
+}
+
+button.span:hover{
+    background-color:rgba(229, 229, 86, 0.73);
+}
